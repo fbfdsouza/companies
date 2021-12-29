@@ -31,17 +31,17 @@ Install [node.js](https://nodejs.org/en/) which includes [npm](https://npmjs.com
 1 - Install the dependencies
 
 ```bash
-yarn install
+npm install
 ```
 
 2 - Execute the demo website project
 ```bash
-yarn start
+npm start
 ```
 
 3 - Execute the web demo api project
 ```bash
-yarn run server
+npm run server
 ```
 
 You should then have the demo website running in `http://localhost:8080` and the demo api runnin in `http://localhost:3000`
