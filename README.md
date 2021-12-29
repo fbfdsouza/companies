@@ -48,7 +48,5 @@ You should then have the demo website running in `http://localhost:8080` and the
 
 ## API
 
-The REST API is based on [json-server](https://www.npmjs.com/package/), and the data is defined in [db.json](db.json) file. To start it simply run:
+The REST API is based on [json-server](https://www.npmjs.com/package/), and the data is defined in [db.json](db.json) file.
 
-
-You should then have the API running in http://localhost:3000.
