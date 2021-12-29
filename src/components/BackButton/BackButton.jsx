@@ -2,8 +2,7 @@ import React from "react";
 import { Button } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
 
-
-export default ({ onClick, children }) => {
+const BackButton = ({ onClick, children }) => {
   let navigate = useNavigate();
 
   const handleBackNavigation = () => {
@@ -15,3 +14,5 @@ export default ({ onClick, children }) => {
     </Button>
   );
 };
+
+export default BackButton;

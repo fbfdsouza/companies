@@ -4,7 +4,7 @@ import PhoneNumber from "../../../components/PhoneNumber/PhoneNumber";
 import BackButton from "../../../components/BackButton";
 import { fetchPhoneNumbersByCompanyId } from "../../../api/phoneNumberApi";
 import { fetchCompanyById } from "../../../api/companyApi";
-export default () => {
+const CompanyPage = () => {
   const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [company, setCompany] = useState("");
   const { companyId } = useParams();
@@ -15,7 +15,7 @@ export default () => {
       setCompany(companyResult.data.name);
       setPhoneNumbers(numbersResult.data);
     })();
-  }, []);
+  }, [companyId]);
 
   const renderPhoneList = (phoneNumberList = []) => {
     return phoneNumberList.map((phone) => (
@@ -40,3 +40,5 @@ export default () => {
     </>
   );
 };
+
+export default CompanyPage

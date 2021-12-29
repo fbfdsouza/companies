@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import BackButton from "../../../components/BackButton";
 import { useParams } from "react-router-dom";
 import { fetchPhoneNumberById } from "../../../api/phoneNumberApi";
-export default () => {
+const PhoneNumber = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const { phoneNumberId } = useParams();
   useEffect(() => {
@@ -10,7 +10,7 @@ export default () => {
       const phoneNumberResult = await fetchPhoneNumberById(phoneNumberId);
       setPhoneNumber(phoneNumberResult.data);
     })();
-  }, []);
+  }, [phoneNumberId]);
 
   return (
     <>
@@ -21,3 +21,5 @@ export default () => {
     </>
   );
 };
+
+export default PhoneNumber

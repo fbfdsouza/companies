@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Company from "../../../components/Company";
 import { fetchCompanies } from "../../../api/companyApi";
 
-export default () => {
+const Home = () => {
   const [companies, setCompanies] = useState([]);
   useEffect(() => {
     (async () => {
@@ -32,3 +32,5 @@ export default () => {
     </>
   );
 };
+
+export default Home;

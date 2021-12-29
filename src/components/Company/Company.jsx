@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export default ({ id, name, vatin }) => {
+const Company = ({ id, name, vatin }) => {
   return (
     <tr key={id}>
       <td>
@@ -9,3 +9,5 @@ export default ({ id, name, vatin }) => {
     </tr>
   );
 };
+
+export default Company;
