@@ -4,19 +4,20 @@ This project is composed of a demo api and a demo React website.
 
 in the website through `/` the user can see the company list
 
-![Companies](companies.png "Companies")
+![Companies](resources/company-list.png "Companies")
+
 
 *clicking on a company the navigation goes to `/companies/:companyId`*
 
 in `/companies/:companyId` the user can see a table of numbers that belong to that company
 
-![Local Public Office](companynums.png "Local Public Office")
+![Local Public Office](resources/selected-company.png "Local Public Office")
 
 *clicking on a number should navigate to `/numbers/:numberId`*
 
 in `/numbers/:numberId` the user can see the number details
 
-![351910000000](num.png "351910000000")
+![351910000000](resources/selected-phone-number.png "351910000000")
 
 in both `/numbers/:numberId` and `/companies/:companyId` there is a `Go Back` button that goes to the previous page
 
